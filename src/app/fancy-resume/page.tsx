@@ -129,15 +129,7 @@ export default function Home() {
               find learning new things exciting and facing unfamiliar
               challenges. In addition to coding, I enjoy building side projects
               because it allows me to explore my creativity and accomplish
-              exciting things. Follow my
-              <a
-                className="linkedIn"
-                href={socialMediaLink.linkedIn}
-                target="_blanket"
-              >
-                LinkedIn
-              </a>
-              to see my journey.
+              exciting things.
             </p>
             <div className="skills-container">
               <h2 className="skills-heading">Skillset</h2>
