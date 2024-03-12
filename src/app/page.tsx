@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {socialMediaLink} from "@/app/contants";
+import { socialMediaLink } from "@/app/contants";
 
 export default function Home() {
   return (

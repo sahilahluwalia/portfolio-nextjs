@@ -1,5 +1,5 @@
 import React from "react";
-import { client, gql } from "../util";
+import { client, gql } from "@/util";
 import { socialMediaLink } from "@/app/contants";
 
 async function Writing() {
@@ -42,7 +42,6 @@ async function Writing() {
     <div>
       <div id={"writings"} className="writings-container ">
         <h2 className="writings-headline">Some of my writings</h2>
-
         <div className="writings-cards-container">
           {postList.map(
             (

@@ -3,7 +3,6 @@
 import React from "react";
 
 import { GithubIcon, LinkIcon } from "@/icons";
-import Link from "next/link";
 
 const Projects = [
   {
