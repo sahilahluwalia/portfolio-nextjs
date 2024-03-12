@@ -12,13 +12,13 @@ const socialMediaLink = {
 const SEO = {
   title: "Sahil Ahluwalia | Software Developer",
   description:
-    "Sahil Ahluwalia is a Software Developer. He is a Full Stack Developer and mainly works in React and Typescript.",
+    "Sahil Ahluwalia is a Software Developer.",
   openGraph: {
     type: "website",
     url: "https://sahilahluwalia.com",
     title: "Sahil Ahluwalia",
     description:
-      "Sahil Ahluwalia is a Software Developer. He is a Full Stack Developer and mainly works in React and Typescript. He is passionate about creating experiences that are easy to use, accessible, and that meet the user's needs.",
+      "Sahil Ahluwalia is a Software Developer.",
     image: "https://sahilahluwalia.com/images/social-share.png",
   },
   twitter: {

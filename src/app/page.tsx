@@ -4,11 +4,11 @@ import { socialMediaLink } from "@/app/contants";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-3 p-24 bg-white text-black font-normal">
-      <h2 className="text-black">sahilahluwalia.com</h2>
-      <p>
+      <h1 className="text-black">sahilahluwalia.com</h1>
+      <h2 className="text-black">
         Hi 👋 My name is Sahil Ahluwalia. I am a Software Developer. I mainly
         work in React and Typescript.
-      </p>
+      </h2>
       <p>A little bit about myself:</p>
       <div className="ml-10">
         <li>wrote first code in 2016</li>
