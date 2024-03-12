@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SEO } from "@/app/contants";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "Sahil Ahluwalia | Software Developer",
-  description:
-    "Sahil Ahluwalia is a Software Developer based in Mumbai, India. He mainly works in React and Typescript. He is obsessed about solving problems through code, and trying his best every day.",
+  title: SEO.title,
+  description: SEO.description,
+  openGraph: SEO.openGraph,
+  twitter: SEO.twitter,
 };
 export default function RootLayout({
   children,

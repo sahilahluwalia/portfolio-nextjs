@@ -9,4 +9,23 @@ const socialMediaLink = {
   sourceCode: "https://github.com/sahilahluwalia/portfolio-nextjs",
 };
 
-export { socialMediaLink };
+const SEO = {
+  title: "Sahil Ahluwalia | Software Developer",
+  description:
+    "Sahil Ahluwalia is a Software Developer. He is a Full Stack Developer and mainly works in React and Typescript.",
+  openGraph: {
+    type: "website",
+    url: "https://sahilahluwalia.com",
+    title: "Sahil Ahluwalia",
+    description:
+      "Sahil Ahluwalia is a Software Developer. He is a Full Stack Developer and mainly works in React and Typescript. He is passionate about creating experiences that are easy to use, accessible, and that meet the user's needs.",
+    image: "https://sahilahluwalia.com/images/social-share.png",
+  },
+  twitter: {
+    handle: "@sahillovescode",
+    site: "@sahillovescode",
+    cardType: "summary_large_image",
+  },
+};
+
+export { socialMediaLink, SEO };
