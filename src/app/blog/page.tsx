@@ -1,42 +1,9 @@
 import React from "react";
 import { gql, client } from "../../util";
 import { socialMediaLink } from "@/app/contants";
+import { getAllPosts } from "@/app/actions";
 async function Page() {
-  const {
-    data: {
-      publication: {
-        posts: { edges },
-      },
-    },
-  } = await client.query({
-    query: gql`{
- publication(host: "${socialMediaLink.hashNodeHost}") {
-  title
-  posts(first:20){
-    edges{
-      node{
-        url
-        slug
-        title
-        publishedAt
-        views
-      }
-    }
-  }
- } 
-}`,
-  });
-  const postList = edges.map(
-    (edge: {
-      node: {
-        slug: string;
-        title: string;
-        publishedAt: string;
-        views: number;
-        url: string;
-      };
-    }) => edge.node,
-  );
+  const posts = await getAllPosts();
   return (
     <>
       <main className="max-w-2xl font-mono m-auto mb-10 text-sm mt-5 text-black bg-white">
@@ -47,38 +14,30 @@ async function Page() {
         </header>
         <ul>
           <li>
-            {postList.map(
-              (post: {
-                slug: string;
-                title: string;
-                publishedAt: string;
-                views: number;
-                url: string;
-              }) => {
-                return (
-                  <a key={post.url} href={post.url}>
-                    {/*<a href={`/blog/${post.slug}`}>*/}
-                    <span
-                      className="px-5 flex transition-[background-color] hover:bg-gray-100 dark:hover:bg-[#242424] active:bg-gray-200 dark:active:bg-[#222] border-y border-gray-200 dark:border-[#313131]
+            {posts.map((post) => {
+              return (
+                <a key={post.url} href={post.url}>
+                  {/*<a href={`/blog/${post.slug}`}>*/}
+                  <span
+                    className="px-5 flex transition-[background-color] hover:bg-gray-100 dark:hover:bg-[#242424] active:bg-gray-200 dark:active:bg-[#222] border-y border-gray-200 dark:border-[#313131]
     border-b-0
 "
-                    >
-                      <span className="py-3 flex grow items-center ">
-                        <span className="w-14 inline-block self-start shrink-0 text-gray-500 dark:text-gray-500">
-                          {new Date(post.publishedAt).getFullYear()}
-                        </span>
-                        <span className="grow dark:text-gray-100">
-                          {post.title}
-                        </span>
-                        <span className="text-gray-500 dark:text-gray-500 text-xs">
-                          {post.views}
-                        </span>
+                  >
+                    <span className="py-3 flex grow items-center ">
+                      <span className="w-14 inline-block self-start shrink-0 text-gray-500 dark:text-gray-500">
+                        {new Date(post.publishedAt).getFullYear()}
+                      </span>
+                      <span className="grow dark:text-gray-100">
+                        {post.title}
+                      </span>
+                      <span className="text-gray-500 dark:text-gray-500 text-xs">
+                        {post.views}
                       </span>
                     </span>
-                  </a>
-                );
-              },
-            )}
+                  </span>
+                </a>
+              );
+            })}
           </li>
         </ul>
       </main>
