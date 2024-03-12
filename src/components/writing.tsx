@@ -2,7 +2,13 @@ import React from "react";
 import { getPostsForResume } from "@/app/actions";
 
 async function Writing() {
-  const posts = await getPostsForResume();
+  const posts = (await getPostsForResume()) as unknown as Array<{
+    title: string;
+    publishedAt: string;
+    subtitle: string;
+    readTimeInMinutes: number;
+    url: string;
+  }>;
   return (
     <div>
       <div id={"writings"} className="writings-container ">

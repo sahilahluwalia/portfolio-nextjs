@@ -35,14 +35,7 @@ const getPostsForResume = async () => {
         readTimeInMinutes: number;
         url: string;
       };
-    }) =>
-      edge.node as {
-        title: string;
-        publishedAt: string;
-        subtitle: string;
-        readTimeInMinutes: number;
-        url: string;
-      }[],
+    }) => edge.node,
   );
 };
 
@@ -74,19 +67,13 @@ const getAllPosts = async () => {
   return edges.map(
     (edge: {
       node: {
+        url: string;
         slug: string;
         title: string;
         publishedAt: string;
         views: number;
-        url: string;
       };
     }) => edge.node,
-  ) as {
-    slug: string;
-    title: string;
-    publishedAt: string;
-    views: number;
-    url: string;
-  }[];
+  );
 };
 export { getPostsForResume, getAllPosts };

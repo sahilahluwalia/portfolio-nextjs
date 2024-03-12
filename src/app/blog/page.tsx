@@ -3,7 +3,12 @@ import { gql, client } from "../../util";
 import { socialMediaLink } from "@/app/contants";
 import { getAllPosts } from "@/app/actions";
 async function Page() {
-  const posts = await getAllPosts();
+  const posts = (await getAllPosts()) as unknown as Array<{
+    title: string;
+    publishedAt: string;
+    views: number;
+    url: string;
+  }>;
   return (
     <>
       <main className="max-w-2xl font-mono m-auto mb-10 text-sm mt-5 text-black bg-white">
