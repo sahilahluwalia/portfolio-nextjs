@@ -7,7 +7,7 @@ export default function Home() {
       <h1 className="text-black">sahilahluwalia.com</h1>
       <h2 className="text-black">
         Hi 👋 My name is Sahil Ahluwalia. I am a Software Developer. I mainly
-        work in React and Typescript.
+        work in Next.js and Typescript.
       </h2>
       <p>A little bit about myself:</p>
       <div className="ml-10">
@@ -29,7 +29,7 @@ export default function Home() {
             href={"https://markmywords.au/"}
           >
             {" "}
-            MarkMyWordds
+            MarkMyWords
           </Link>
           .
         </li>
