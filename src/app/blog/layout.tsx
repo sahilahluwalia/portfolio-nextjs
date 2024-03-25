@@ -7,7 +7,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       <div className="w-[670px]">
         <nav>
           <a
-            className="hover:bg-gray-200 text-xl font-bold dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] p-2 rounded-sm -ml-2 transition-[background-color]"
+            className="hover:bg-gray-200 text-xl font-bold   p-2 rounded-sm -ml-2 transition-[background-color]"
             href="/"
           >
             Sahil Ahluwalia
@@ -18,7 +18,7 @@ function Layout({ children }: { children: React.ReactNode }) {
           <div className="grow text-left">
             Sahil Ahluwalia (
             <a
-              className="border-b text-gray-600 border-gray-300 transition-[border-color] hover:border-gray-600 dark:text-white dark:border-gray-500 dark:hover:border-white "
+              className="border-b text-gray-600 border-gray-300 transition-[border-color] hover:border-gray-600 "
               target="_blank"
               href={socialMediaLink.twitter}
             >
@@ -28,7 +28,7 @@ function Layout({ children }: { children: React.ReactNode }) {
           </div>
           <div>
             <a
-              className="border-b text-gray-600 border-gray-300 transition-[border-color] hover:border-gray-600 dark:text-white dark:border-gray-500 dark:hover:border-white "
+              className="border-b text-gray-600 border-gray-300 transition-[border-color] hover:border-gray-600 "
               target="_blank"
               href={socialMediaLink.sourceCode}
             >
