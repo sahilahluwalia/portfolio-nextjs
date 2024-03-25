@@ -35,7 +35,7 @@ export default function Home() {
         </li>
 
         <li>
-          was founder software engineer on AI based indian HR platform to ease
+          was founding software engineer on AI based indian HR platform to ease
           the hiring progress named{" "}
           <Link
             rel="noopener noreferrer"
