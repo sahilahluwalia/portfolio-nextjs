@@ -6,7 +6,6 @@ import {
   GithubIcon,
   InstagramIcon,
   HashnodeIcon,
-  LinkIcon,
 } from "@/icons";
 import Link from "next/link";
 import React from "react";
@@ -189,7 +188,7 @@ export default function Home() {
         {/*<Project/>*/}
         <Writing />
         <footer className="footer">
-          <span>© 2023 Sahil Ahluwalia</span>
+          <span>© {new Date().getFullYear()} Sahil Ahluwalia</span>
           <div className="footer-social">
             {socialMediaArray.map((socialMedia, index) => {
               return (
