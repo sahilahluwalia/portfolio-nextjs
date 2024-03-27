@@ -28,4 +28,73 @@ const SEO = {
   },
 };
 
-export { socialMediaLink, SEO };
+const skillSetArray = [
+  "React.js",
+  "Next.js",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "Tailwind",
+  "Material-UI",
+  "Git",
+  "MongoDB",
+  "Postgres SQL",
+  "Express.js",
+  "Node.js",
+  "Framer-Motion",
+  "Zustand",
+  "Python",
+  "OpenAI",
+  "REST",
+  "Postman",
+  "Scrum",
+  "DrizzleORM",
+  "NextAuth.js",
+  "AWS",
+  "Prisma",
+];
+
+const experienceArray = [
+  {
+    date: "April 2023 - Feb 2024",
+    company: "MarkMyWords",
+    title: "Fullstack Developer",
+    type: "contract",
+    link: "https://markmywords.au/",
+    description:
+        "I am working on a team of 3 to develop an AI-based ed-tech platform that helps Teachers to give explicit feedback and track student's progress. We leveraged OpenAI to use AI to grade student's assignments and provide feedback.",
+    technologies: [
+      "Next.js",
+      "Postgres SQL",
+      "TypeScript",
+      "REST",
+      "Framer-Motion",
+      "Zustand",
+      "AWS",
+      "DrizzleORM",
+      "NextAuth.js",
+    ],
+  },
+  {
+    date: "Nov 2022 - May 2023",
+    company: "Workcrew",
+    title: "Software Developer",
+    type: "full-time",
+    link: "https://www.workcrew.ai/",
+    description:
+        "I worked on a team of 3 to develop a human resources platform that leverages AI to streamline the hiring process. I was responsible for developing the front-end and back-end of the platform, which included creating a user-friendly interface and integrating with the backend API.",
+    technologies: [
+      "React.js",
+      "Javascript",
+      "Material UI",
+      "Tailwind",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+    ],
+  },
+];
+
+export { socialMediaLink, SEO,skillSetArray, experienceArray, };
