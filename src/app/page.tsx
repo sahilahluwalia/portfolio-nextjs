@@ -12,7 +12,20 @@ export default function Home() {
       <p>A little bit about myself:</p>
       <div className="ml-10">
         <li>
-          was full stack developer on AI based Ed-tech platform for australian
+          founded AI based Short Video creation platform to completely automate mass faceless video production{" "}
+          <Link
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-blue-600"
+              href={"https://shortsgenie.ai/"}
+          >
+            {" "}
+            ShortsGenie
+          </Link>
+          .
+        </li>
+        <li>
+          was full stack contributor on AI based Ed-tech platform for australian
           teachers to generate & mark student assessments named{" "}
           <Link
               rel="noopener noreferrer"

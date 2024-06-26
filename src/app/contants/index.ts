@@ -53,9 +53,35 @@ const skillSetArray = [
   "NextAuth.js",
   "AWS",
   "Prisma",
+    "Qstash",
+    "Whisper",
+    "Cloudfare",
 ];
 
 const experienceArray = [
+  {
+    date: "March 2024 - Current ",
+    company: "ShortsGenie",
+    title: "Founder",
+    type: "contract",
+    link: "https://shortsgenie.ai/",
+    description:
+    "Decided to solve the problem of mass video production by creating an AI-based platform that automates the entire process. Just select the type of video, platform will generate interactive video for you.",
+    technologies: [
+      "Next.js",
+      "Postgres SQL",
+      "TypeScript",
+      "REST",
+      "Framer-Motion",
+      "AWS",
+      "Supabase",
+        "Whisper",
+        "Cloudfare",
+        "Qstash",
+      "Prisma",
+      "NextAuth.js",
+    ],
+  },
   {
     date: "April 2023 - Feb 2024",
     company: "MarkMyWords",
