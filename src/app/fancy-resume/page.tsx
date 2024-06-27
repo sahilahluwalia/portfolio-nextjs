@@ -91,7 +91,7 @@ export default function Home() {
                         </h2>
                         -<h2>{experience.title}</h2>
                         <span className="text-xs mt-1">
-                          ({experience.type})
+                          {experience?.type !== null && <>({experience.type})</>}
                         </span>
                       </div>
 

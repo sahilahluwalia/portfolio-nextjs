@@ -63,7 +63,7 @@ const experienceArray = [
     date: "March 2024 - Current ",
     company: "ShortsGenie",
     title: "Founder",
-    type: "contract",
+    type: null,
     link: "https://shortsgenie.ai/",
     description:
     "Decided to solve the problem of mass video production by creating an AI-based platform that automates the entire process. Just select the type of video, platform will generate interactive video for you.",
@@ -105,7 +105,7 @@ const experienceArray = [
   {
     date: "Nov 2022 - May 2023",
     company: "Workcrew",
-    title: "Software Developer",
+    title: "Frontend Developer",
     type: "full-time",
     link: "https://www.workcrew.ai/",
     description:
