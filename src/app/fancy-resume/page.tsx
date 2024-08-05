@@ -50,17 +50,13 @@ export default function Home() {
           <div id={"about"} className="about-container">
             <h1 className="about-title">About</h1>
             <p className="about-description">
-              I'm a 24 year old developer living in India. I discovered my
-              passion for computer after playing mods in Counter Strike 1.6. I
-              fell in love with using my creativity to build things for the web.
-              I decided to study Computer Science and then pursue a coding
-              career, facing challenges along the way. Through persistence,
-              self-discipline, and commitment, I achieved my goal of becoming a
-              fullstack developer. What kept me on this journey is that I always
-              find learning new things exciting and facing unfamiliar
-              challenges. In addition to coding, I enjoy building side projects
-              because it allows me to explore my creativity and accomplish
-              exciting things.
+              I'm a {new Date().getFullYear()%100} year old developer living in India. This early experience sparked my curiosity and led me to pursue
+              Computer Science in college.
+              After graduating, I dove headfirst into a coding career, quickly
+              evolved into a fullstack developer. Over the years, I've sharpened my
+              skills in both frontend and backend technologies, allowing me to
+              craft complete web solutions from the ground up. I fell in love with using my creativity to build things for the web.
+              When I'm not coding, I mentor aspiring developers and explore ever-evolving nature of technology.
             </p>
             <div className="skills-container">
               <h2 className="skills-heading">Skillset</h2>
