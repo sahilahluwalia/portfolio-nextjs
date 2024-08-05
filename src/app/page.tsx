@@ -52,8 +52,7 @@ export default function Home() {
           .
         </li>
         <li>
-          i am obsessed about solving problems through code, and trying my best
-          every day.
+          i like to solve problems through code.
         </li>
         <li>studied Computer Science from 2018 to 2022.</li>
         <li>wrote first code in 2016</li>
