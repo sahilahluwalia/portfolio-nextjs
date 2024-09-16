@@ -66,7 +66,7 @@ const experienceArray = [
     type: null,
     link: "https://shortsgenie.ai/",
     description:
-    "Decided to solve the problem of mass video production by creating an AI-based platform that automates the entire process. Just select the type of video, platform will generate interactive video for you.",
+    "Decided to solve the problem of mass video production by creating platform that automates the entire process. Just select the type of video, platform will generate interactive video for you.",
     technologies: [
       "Next.js",
       "Postgres SQL",
@@ -89,7 +89,7 @@ const experienceArray = [
     type: "contract",
     link: "https://markmywords.au/",
     description:
-        "I am working on a team of 3 to develop an AI-based ed-tech platform that helps Teachers to give explicit feedback and track student's progress. We leveraged OpenAI to use AI to grade student's assignments and provide feedback.",
+        "I am working on a team of 3 to develop an ed-tech platform that helps Teachers to give explicit feedback and track student's progress. We leveraged OpenAI to use AI to grade student's assignments and provide feedback.",
     technologies: [
       "Next.js",
       "Postgres SQL",

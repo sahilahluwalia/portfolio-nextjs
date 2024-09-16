@@ -12,7 +12,7 @@ export default function Home() {
       <p>A little bit about myself:</p>
       <div className="ml-10">
         <li>
-          founded AI based Short Video creation platform to completely automate mass faceless video production{" "}
+          working on Short Video Creation platform to completely automate mass faceless video production end to end.{" "}
           <Link
               rel="noopener noreferrer"
               target="_blank"
@@ -25,8 +25,8 @@ export default function Home() {
           .
         </li>
         <li>
-          was full stack contributor on AI based Ed-tech platform for australian
-          teachers to generate & mark student assessments named{" "}
+          was full stack contributor on Ed-tech platform for
+          teachers to generate & mark student assessments using AI named{" "}
           <Link
               rel="noopener noreferrer"
               target="_blank"
@@ -39,7 +39,7 @@ export default function Home() {
           .
         </li>
         <li>
-          was founding software engineer on AI based indian HR platform to ease
+          was founding software engineer of HR platform to ease
           the hiring progress named{" "}
           <Link
               rel="noopener noreferrer"
@@ -51,12 +51,8 @@ export default function Home() {
           </Link>
           .
         </li>
-        <li>
-          i like to solve problems through code.
-        </li>
         <li>studied Computer Science from 2018 to 2022.</li>
-        <li>wrote first code in 2016</li>
-        <li>i am from Mumbai, India.</li>
+        <li>from Mumbai, India.</li>
 
 
       </div>
