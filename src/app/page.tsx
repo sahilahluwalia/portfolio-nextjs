@@ -99,6 +99,13 @@ export default function Home() {
           Github
         </Link>
 
+        <Link
+          target="_blank"
+          href={socialMediaLink.emailMe}
+          className="text-blue-600 hover:text-blue-800 "
+        >
+          Email me
+        </Link>
         </div>
       </div>
     </main>

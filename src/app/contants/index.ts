@@ -7,6 +7,7 @@ const socialMediaLink = {
   hashNodeHost: "sahilahluwalia.hashnode.dev",
   email: "iamsahilahluwalia@gmail.com",
   sourceCode: "https://github.com/sahilahluwalia/portfolio-nextjs",
+  emailMe: "mailto:iamsahilahluwalia@gmail.com",
 };
 
 const SEO = {
