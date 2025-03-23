@@ -11,9 +11,9 @@ const socialMediaLink = {
 };
 
 const SEO = {
-  title: "Sahil Ahluwalia | Software Developer",
+  title: "Sahil Ahluwalia | Software Engineer",
   description:
-    "Sahil Ahluwalia is a Full stack Software Developer specialized in Typescript and React based framework.",
+    "Sahil Ahluwalia is a Full stack Software Engineer specialized in Typescript and React based framework.",
   openGraph: {
     type: "website",
     url: "https://sahilahluwalia.com",
