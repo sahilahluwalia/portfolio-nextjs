@@ -1,89 +1,105 @@
 import Link from "next/link";
 import { socialMediaLink } from "@/app/contants";
 
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-3 p-6 sm:p-20 bg-white text-black font-normal">
-      <h1 className="text-black">sahilahluwalia.com</h1>
-      <h2 className="text-black">
-        Hi 👋 My name is Sahil Ahluwalia. I am a Software Developer. I mainly
-        work in Next.js and Typescript.
-      </h2>
-      <p>A little bit about myself:</p>
-      <div className="ml-10">
-        <li>
-          working on Short Video Creation platform to completely automate mass faceless video production end to end.{" "}
+    <main className="min-h-screen  bg-white text-black p-5 md:p-20">
+      <div className='max-w-3xl mx-auto'>
+
+
+      <div className=" mx-auto ">
+        <h1 className="mb-4 text-2xl font-semibold text-black">Sahil Ahluwalia</h1>
+        <h2 className="mb-4 text-xl text-black leading-relaxed">
+          Generalist Developer specializing in building scalable, optimized, and secure applications. I enjoy reverse engineering and solving niche problems.
+        </h2>
+        <h3 className="mb-8 text-lg text-black leading-relaxed">
+          I primarily work with TypeScript and occasionally Python. However, I'm comfortable using other languages when solving specific problems or working within constraints.
+        </h3>
+      </div>
+
+      <div className="ml-8 mb-8 space-y-2">
+        <p >Currently</p>
+        <li className="pb-5">
+           shipping end to end IIoT solutions for manufacturing plants and managing IT infrastructure for the company. {" "}
           <Link
-              rel="noopener noreferrer"
-              target="_blank"
-              className="text-blue-600"
-              href={"https://shortsgenie.ai/"}
+            rel="noopener noreferrer"
+            target="_blank"
+            href={"https://ahluengineers.com/"}
+            className="text-blue-600 hover:text-blue-800 "
+          >
+            Ahlu
+          </Link>
+        </li>
+        <p>Previously</p>
+        <li>
+          shipped Short Video Creation platform that completely automate mass faceless video creation end to end.{" "}
+          <Link
+            rel="noopener noreferrer"
+            target="_blank"
+            href={"https://shortsgenie.ai/"}
+            className="text-blue-600 hover:text-blue-800 "
           >
             {" "}
             ShortsGenie
           </Link>
-          .
+
         </li>
         <li>
-          was full stack contributor on Ed-tech platform for
-          teachers to generate & mark student assessments using AI named{" "}
+          shipped Ed-tech platform for teachers to generate & mark student assessments using LLMs. {" "}
           <Link
-              rel="noopener noreferrer"
-              target="_blank"
-              className="text-blue-600"
-              href={"https://markmywords.au/"}
+            rel="noopener noreferrer"
+            target="_blank"
+            href={"https://markmywords.au/"}
+            className="text-blue-600 hover:text-blue-800 "
           >
             {" "}
             MarkMyWords
           </Link>
-          .
+
         </li>
-        <li>
-          was founding software engineer of HR platform to ease
-          the hiring progress named{" "}
+        <li className="pb-5">
+          shipped HR platform to ease the hiring progress. {" "}
           <Link
-              rel="noopener noreferrer"
-              target="_blank"
-              className="text-blue-600"
-              href={"https://www.workcrew.ai/"}
+            rel="noopener noreferrer"
+            target="_blank"
+            href={"https://workcrew.ai/"}
+            className="text-blue-600 hover:text-blue-800 "
           >
             WorkCrew
           </Link>
-          .
+
         </li>
+        <p className="mb-4">A little bit about myself:</p>
         <li>studied Computer Science from 2018 to 2022.</li>
         <li>from Mumbai, India.</li>
-
-
       </div>
-      <p>
+      <p className="mb-8">
         I am fortunate to have worked with some amazing people and get to learn
         from them.
       </p>
-      <div className="flex gap-6 flex-wrap">
-        <Link className="text-blue-600" href={"/blog"}>
+      <div className="flex flex-wrap gap-6">
+        <Link href={"/blog"} className="text-blue-600 hover:text-blue-800 ">
           Blog
         </Link>
 
         <Link
-            className="text-blue-600"
-            target="_blank"
-            href={socialMediaLink.linkedIn}
+          target="_blank"
+          href={socialMediaLink.linkedIn}
+          className="text-blue-600 hover:text-blue-800 "
         >
           Linkedin
         </Link>
 
         <Link
-          className="text-blue-600"
           target="_blank"
           href={socialMediaLink.github}
+          className="text-blue-600 hover:text-blue-800 "
         >
           Github
         </Link>
 
-        <Link className="text-blue-600" href={"/fancy-resume"}>
-          Fancy Resume
-        </Link>
+        </div>
       </div>
     </main>
   );
