@@ -5,9 +5,9 @@ const socialMediaLink = {
   instagram: "https://www.instagram.com/iamsahilahluwalia/",
   hashNode: "https://sahilahluwalia.hashnode.dev/",
   hashNodeHost: "sahilahluwalia.hashnode.dev",
-  email: "iamsahilahluwalia@gmail.com",
+  email: "contact@sahilahluwalia.com",
   sourceCode: "https://github.com/sahilahluwalia/portfolio-nextjs",
-  emailMe: "mailto:iamsahilahluwalia@gmail.com",
+  emailMe: "mailto:contact@sahilahluwalia.com",
 };
 
 const SEO = {
