@@ -21,15 +21,7 @@ export default function Home() {
         <div className="ml-8 mb-8 space-y-2">
           <p >Currently</p>
           <li className="pb-5">
-            shipping end to end IIoT solutions for manufacturing plants and managing IT infrastructure for the company. {" "}
-            <Link
-              rel="noopener noreferrer"
-              target="_blank"
-              href={"https://ahluengineers.com/"}
-              className="text-blue-600 hover:text-blue-800 "
-            >
-              Ahlu
-            </Link>
+            shipping end to end IIoT solutions for manufacturing plants
           </li>
           <p>Previously</p>
           <li>
