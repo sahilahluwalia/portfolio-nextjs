@@ -26,7 +26,7 @@ export default function Home() {
           <p>Previously</p>
           <li>
             shipped Short Video Creation platform that completely automate mass faceless video creation end to end.{" "}
-            <Link
+            {/* <Link
               rel="noopener noreferrer"
               target="_blank"
               href={"https://shortsgenie.ai/"}
@@ -34,7 +34,7 @@ export default function Home() {
             >
               {" "}
               ShortsGenie
-            </Link>
+            </Link> */}
 
           </li>
           <li>
