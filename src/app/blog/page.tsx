@@ -1,5 +1,8 @@
 import React from "react";
+import Link from "next/link";
 import { getAllPosts } from "@/app/actions";
+import { socialMediaLink } from "@/app/contants";
+
 async function Page() {
   const posts = (await getAllPosts()) as unknown as Array<{
     title: string;
@@ -7,44 +10,76 @@ async function Page() {
     views: number;
     url: string;
   }>;
+  
   return (
-    <>
-      <main className="max-w-2xl font-mono m-auto mb-10 text-sm mt-5 text-black bg-white">
-        <header className="text-gray-500  flex items-center text-xs mx-5">
-          <span className="w-12 text-left ">date</span>
-          <span className="grow pl-2">title</span>
-          <span className=" pl-4 text-gray-700 ">views</span>
-        </header>
-        <ul>
-          <li>
-            {posts.map((post) => {
-              return (
-                <a key={post.url} href={post.url}>
-                  {/*<a href={`/blog/${post.slug}`}>*/}
-                  <span
-                    className="px-5 flex transition-[background-color] hover:bg-gray-100 group dark:hover:bg-[#242424] active:bg-gray-200 dark:active:bg-[#222] border-y border-gray-200 dark:border-[#313131]
-    border-b-0
-"
-                  >
-                    <span className="py-3 flex grow items-center ">
-                      <span className="w-14 inline-block self-start shrink-0 text-gray-700 group-hover:text-white">
-                        {new Date(post.publishedAt).getFullYear()}
-                      </span>
-                      <span className="grow text-gray-700 group-hover:text-white">
-                        {post.title}
-                      </span>
-                      <span className="text-gray-700 group-hover:text-white text-xs">
-                        {post.views}
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              );
-            })}
-          </li>
-        </ul>
-      </main>
-    </>
+    <main className="min-h-screen  bg-white text-black p-5 md:p-20">
+      <div className='max-w-3xl mx-auto'>
+
+
+        <div className=" mx-auto ">
+          <h1 className="mb-4 text-2xl font-semibold text-black">Blog</h1>
+          <h2 className="mb-4 text-xl text-black leading-relaxed">
+            Thoughts on development, technology, and problem-solving.
+          </h2>
+          
+        </div>
+
+        <div className="ml-8 mb-8 space-y-2">
+          <p>Recent Posts</p>
+          {posts.map((post) => (
+            <li key={post.url} className="pb-5">
+              <a
+                href={post.url}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-blue-600 hover:text-blue-800 "
+              >
+                {post.title}
+              </a>{" "}
+              ({new Date(post.publishedAt).getFullYear()}) - {post.views} views
+            </li>
+          ))}
+          
+          {posts.length === 0 && (
+            <li className="pb-5">
+              No blog posts found. Check back later for new content!
+            </li>
+          )}
+        </div>
+        
+        
+        
+        <div className="flex flex-wrap gap-6">
+          <Link href="/" className="text-blue-600 hover:text-blue-800 ">
+            Home
+          </Link>
+
+          <Link
+            target="_blank"
+            href={socialMediaLink.linkedIn}
+            className="text-blue-600 hover:text-blue-800 "
+          >
+            Linkedin
+          </Link>
+
+          <Link
+            target="_blank"
+            href={socialMediaLink.github}
+            className="text-blue-600 hover:text-blue-800 "
+          >
+            Github
+          </Link>
+
+          <Link
+            target="_blank"
+            href={socialMediaLink.emailMe}
+            className="text-blue-600 hover:text-blue-800 "
+          >
+            Email me
+          </Link>
+        </div>
+      </div>
+    </main>
   );
 }
 

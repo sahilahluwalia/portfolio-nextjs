@@ -4,7 +4,7 @@ import { socialMediaLink } from "@/app/contants";
 
 export default function Home() {
   return (
-    <main className="min-h-screen  bg-white text-black p-5 md:p-20">
+    <main className="min-h-screen  bg-white text-black p-5 md:px-20 md:pt-10">
       <div className='max-w-3xl mx-auto'>
 
 
@@ -14,7 +14,7 @@ export default function Home() {
             Generalist Developer specializing in building scalable, optimized, and secure applications. I enjoy reverse engineering and solving niche problems.
           </h2>
           <h3 className="mb-8 text-lg text-black leading-relaxed">
-            I primarily work with TypeScript and occasionally Python. However, I'm comfortable using other languages when solving specific problems or working within constraints.
+            I primarily work with TypeScript and occasionally Python. However, I'm comfortable learning other languages when solving specific problems or working within constraints.
           </h3>
         </div>
 
@@ -25,20 +25,20 @@ export default function Home() {
           </li>
           <p>Previously</p>
           <li>
-            shipped Short Video Creation platform that completely automate mass faceless video creation end to end.{" "}
-            {/* <Link
+            shipped Short Video Creation platform that completely automate mass faceless video creation end to end.{" "} (sold)
+            <Link
               rel="noopener noreferrer"
               target="_blank"
-              href={"https://shortsgenie.ai/"}
+              href={"https://github.com/sahilahluwalia/portfolio-nextjs"}
               className="text-blue-600 hover:text-blue-800 "
             >
               {" "}
-              ShortsGenie
-            </Link> */}
+              Demo Loom Video
+            </Link>
 
           </li>
           <li>
-            shipped Ed-tech platform for teachers to generate & mark student assessments using LLMs. {" "}
+            shipped v1 of Ed-tech platform for teachers to generate & mark student assessments using LLMs. {" "}
             <Link
               rel="noopener noreferrer"
               target="_blank"
