@@ -38,7 +38,7 @@ export default function Home() {
 
           </li>
           <li>
-            shipped v1 of Ed-tech platform for teachers to generate & mark student assessments using LLMs. {" "}
+            shipped Ed-tech platform for teachers to generate & mark student assessments using LLMs. {" "}
             <Link
               rel="noopener noreferrer"
               target="_blank"
