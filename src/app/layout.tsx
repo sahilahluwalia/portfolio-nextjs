@@ -4,6 +4,7 @@ import "./globals.css";
 import { SEO } from "@/app/contants";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
+  metadataBase: new URL(SEO.url),
   title: SEO.title,
   description: SEO.description,
   openGraph: SEO.openGraph,

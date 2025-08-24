@@ -11,15 +11,16 @@ const socialMediaLink = {
 };
 
 const SEO = {
-  title: "Sahil Ahluwalia | Software Engineer",
+  title: "Sahil Ahluwalia | Full Stack Developer",
+  url: "https://sahilahluwalia.com",
   description:
-    "Sahil Ahluwalia is a Full stack Software Engineer specialized in Typescript and React based framework.",
+    "Sahil Ahluwalia is a Full Stack Developer specializing in building scalable, optimized, and secure web applications.",
   openGraph: {
     type: "website",
     url: "https://sahilahluwalia.com",
     title: "Sahil Ahluwalia",
     description:
-      "Sahil Ahluwalia is a Full stack Software Developer specialized in Typescript and React based framework.",
+      "Sahil Ahluwalia is a Full Stack Developer specializing in building scalable, optimized, and secure web applications.",
     image: "https://sahilahluwalia.com/images/social-share.png",
   },
   twitter: {
