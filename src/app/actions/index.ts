@@ -54,21 +54,19 @@ const getAllPosts = async () => {
     edges{
       node{
         url
-        slug
         title
         publishedAt
         views
       }
     }
   }
- } 
+ }
 }`,
   });
   return edges.map(
     (edge: {
       node: {
         url: string;
-        slug: string;
         title: string;
         publishedAt: string;
         views: number;
