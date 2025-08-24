@@ -72,7 +72,9 @@ export default function Home() {
           from them.
         </p>
         <div className="flex flex-wrap gap-6">
-          <Link href={"/blog"} className="text-blue-600 hover:text-blue-800 ">
+          <Link href={"/blog"}
+          prefetch={true}
+          className="text-blue-600 hover:text-blue-800 ">
             Blog
           </Link>
 

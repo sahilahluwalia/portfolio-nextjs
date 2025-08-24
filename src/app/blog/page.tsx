@@ -18,7 +18,7 @@ interface BlogPost {
 function LoadingSkeleton() {
   return (
     <div className="space-y-4">
-      {[1, 2].map((index) => (
+      {[1, 2,3,4].map((index) => (
         <div key={index} className="pb-5 space-y-2">
           {/* <div className="h-6 bg-gray-300 rounded animate-pulse w-3/4"></div> */}
           <div className="h-4 bg-gray-300 rounded animate-pulse w-1/2"></div>
