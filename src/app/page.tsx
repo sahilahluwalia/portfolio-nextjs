@@ -29,7 +29,7 @@ export default function Home() {
             <Link
               rel="noopener noreferrer"
               target="_blank"
-              href={"https://github.com/sahilahluwalia/portfolio-nextjs"}
+              href={"https://www.loom.com/share/e1e00f5199b446d79c587378521e1a61"}
               className="text-blue-600 hover:text-blue-800 "
             >
               {" "}
